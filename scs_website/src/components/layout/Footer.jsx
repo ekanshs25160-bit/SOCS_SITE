@@ -21,8 +21,8 @@ const Footer = () => {
                 <div>
                     <h5 className="text-white font-mono text-[10px] font-bold tracking-[0.3em] mb-6 uppercase opacity-50">// SOLUTIONS</h5>
                     <div className="flex flex-col gap-4 font-mono text-[11px] font-bold text-white/50 uppercase">
-                        <a href="#expert-directory" className="hover:text-primary transition-all duration-300 tracking-widest">Expert_Directory</a>
-                        <a href="#security-sprints" className="hover:text-primary transition-all duration-300 tracking-widest">Security_Sprints</a>
+                        <a href="/experts" className="hover:text-primary transition-all duration-300 tracking-widest">Expert_Directory</a>
+                        <a href="/sprints" className="hover:text-primary transition-all duration-300 tracking-widest">Security_Sprints</a>
                         <a href="#nda-framework" className="hover:text-primary transition-all duration-300 tracking-widest">NDA_Framework</a>
                         <a href="#pricing-tiers" className="hover:text-primary transition-all duration-300 tracking-widest">Pricing_Tiers</a>
                     </div>
@@ -30,12 +30,13 @@ const Footer = () => {
                 
                 {/* Link Column 2 */}
                 <div>
-                    <h5 className="text-white font-mono text-[10px] font-bold tracking-[0.3em] mb-6 uppercase opacity-50">// TERMINAL</h5>
+                    <h5 className="text-white font-mono text-[10px] font-bold tracking-[0.3em] mb-6 uppercase opacity-50">// OPERATIVE_HUB</h5>
                     <div className="flex flex-col gap-4 font-mono text-[11px] font-bold text-white/50 uppercase">
-                        <a href="#access-node" className="hover:text-primary transition-all duration-300 tracking-widest">Access_Node</a>
-                        <a href="#vulnerability-dashboard" className="hover:text-primary transition-all duration-300 tracking-widest">Vulnerability_Dashboard</a>
+                        <a href="/sprints" className="hover:text-primary transition-all duration-300 tracking-widest text-[#00f5ff]">Security_Marketplace</a>
+                        <a href="#become-expert" className="hover:text-primary transition-all duration-300 tracking-widest">Become_an_Expert</a>
+                        <a href="/auth" className="hover:text-primary transition-all duration-300 tracking-widest">System_Access</a>
+                        <a href="/dashboard" className="hover:text-primary transition-all duration-300 tracking-widest text-[#d1b3ff]">Reports_Dashboard</a>
                         <a href="#research-annex" className="hover:text-primary transition-all duration-300 tracking-widest">Research_Annex</a>
-                        <a href="#community-uplink" className="hover:text-primary transition-all duration-300 tracking-widest">Community_Uplink</a>
                     </div>
                 </div>
             </div>

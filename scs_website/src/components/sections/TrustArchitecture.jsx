@@ -22,6 +22,9 @@ const TrustArchitecture = () => {
                     <p className="text-white/60 leading-relaxed font-inter">
                         Our experts pass multi-stage technical assessments, identity verification, and background checks. You only collaborate with top 1% vetted security professionals.
                     </p>
+                    <a href="/auth" className="mt-6 inline-flex items-center gap-2 border border-[#d1b3ff]/40 text-[#d1b3ff] px-6 py-2.5 rounded-lg font-mono text-[10px] font-bold tracking-widest uppercase hover:bg-[#d1b3ff] hover:text-black transition-colors">
+                        GET VERIFIED <span className="material-symbols-outlined text-[14px]">arrow_forward</span>
+                    </a>
                 </div>
                 
                 <div className="p-10 border border-[#00f5ff]/20 bg-[#0b111a] rounded-3xl relative overflow-hidden group">

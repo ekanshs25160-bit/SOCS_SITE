@@ -20,7 +20,6 @@ const Home = () => {
         <Sprints />
         <TrustArchitecture />
         <DashboardPreview />
-        <ProjectsSection />
         <TeamSection />
       </main>
       <Footer />

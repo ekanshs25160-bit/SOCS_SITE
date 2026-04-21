@@ -26,11 +26,11 @@ const Navbar = () => {
         {/* Right Side: Navigation & Actions */}
         <div className="flex items-center gap-2">
           <div className="flex items-center gap-1.5 mr-6 border-r border-white/10 pr-6">
-            <a href="#experts" className="nav-item flex items-center gap-2 px-3 py-1.5 rounded-lg hover:bg-white/5 transition-all group">
+            <a href="/experts" className="nav-item flex items-center gap-2 px-3 py-1.5 rounded-lg hover:bg-white/5 transition-all group">
                 <span className="material-symbols-outlined text-[18px] text-blue-400 group-hover:scale-110 transition-transform">group</span> 
                 <span className="font-mono text-[10px] uppercase tracking-widest hidden sm:inline text-white/60 group-hover:text-white">EXPERTS</span>
             </a>
-            <a href="#sprints" className="nav-item flex items-center gap-2 px-3 py-1.5 rounded-lg hover:bg-white/5 transition-all group">
+            <a href="/sprints" className="nav-item flex items-center gap-2 px-3 py-1.5 rounded-lg hover:bg-white/5 transition-all group">
                 <span className="material-symbols-outlined text-[18px] text-primary group-hover:scale-110 transition-transform">bolt</span> 
                 <span className="font-mono text-[10px] uppercase tracking-widest hidden sm:inline text-white/60 group-hover:text-white">SPRINTS</span>
             </a>
@@ -38,15 +38,15 @@ const Navbar = () => {
                 <span className="material-symbols-outlined text-[18px] text-tertiary group-hover:scale-110 transition-transform">gavel</span> 
                 <span className="font-mono text-[10px] uppercase tracking-widest hidden sm:inline text-white/60 group-hover:text-white">LEGAL</span>
             </a>
-            <a href="#dashboard" className="nav-item flex items-center gap-2 px-3 py-1.5 rounded-lg hover:bg-white/5 transition-all group">
+            <a href="/dashboard" className="nav-item flex items-center gap-2 px-3 py-1.5 rounded-lg hover:bg-white/5 transition-all group">
                 <span className="material-symbols-outlined text-[18px] text-fuchsia-400 group-hover:scale-110 transition-transform">dashboard</span> 
                 <span className="font-mono text-[10px] uppercase tracking-widest hidden sm:inline text-white/60 group-hover:text-white">DASHBOARD</span>
             </a>
           </div>
           
-          <button className="bg-[#b388ff] text-black font-mono font-black px-6 py-1.5 rounded-full tracking-tighter text-[11px] hover:bg-[#c29cff] transition-all active:scale-95 shadow-[0_0_20px_rgba(179,136,255,0.4)] border-none uppercase">
+          <a href="/auth" className="bg-[#b388ff] text-black font-mono font-black px-6 py-1.5 rounded-full tracking-tighter text-[11px] hover:bg-[#c29cff] transition-all active:scale-95 shadow-[0_0_20px_rgba(179,136,255,0.4)] border-none uppercase inline-flex items-center justify-center">
             SYSTEM_LOGIN
-          </button>
+          </a>
         </div>
       </div>
     </nav>
