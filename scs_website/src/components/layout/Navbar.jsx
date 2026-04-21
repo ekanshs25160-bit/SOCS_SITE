@@ -3,32 +3,6 @@ import Button from '../ui/Button';
 
 const Navbar = () => {
   return (
-    // <nav className="navbar fixed top-0 w-full z-[100] px-[10%] py-6 flex justify-between items-center bg-bg-base/80 backdrop-blur-xl border-b border-white/5">
-    //   <div className="logo text-white font-black text-3xl tracking-tighter cursor-pointer font-space">
-    //     SCS<span className="text-secondary font-mono text-sm tracking-widest ml-1">_CORE</span>
-    //   </div>
-      
-    //   <div className="hidden md:flex gap-12 text-text-secondary font-mono text-[11px] font-bold tracking-[0.2em] uppercase">
-    //     <a href="#projects" className="hover:text-primary transition-all duration-300 relative group">
-    //         PROJECTS
-    //         <span className="absolute -bottom-1 left-0 w-0 h-px bg-primary group-hover:w-full transition-all duration-300"></span>
-    //     </a>
-    //     <a href="#events" className="hover:text-primary transition-all duration-300 relative group">
-    //         SCHEDULE
-    //         <span className="absolute -bottom-1 left-0 w-0 h-px bg-primary group-hover:w-full transition-all duration-300"></span>
-    //     </a>
-    //     <a href="#team" className="hover:text-primary transition-all duration-300 relative group">
-    //         OPERATIVES
-    //         <span className="absolute -bottom-1 left-0 w-0 h-px bg-primary group-hover:w-full transition-all duration-300"></span>
-    //     </a>
-    //   </div>
-      
-    //   <Button variant="outline" className="text-[10px] py-2">SYSTEM_ACCESS</Button>
-    // </nav>
-
-
-
-
     <nav className="fixed top-4 left-4 right-4 z-[100] pointer-events-auto transition-all duration-300">
       <div className="bg-black/60 backdrop-blur-3xl border border-white/5 px-6 py-2.5 rounded-2xl flex items-center justify-between shadow-[0_20px_50px_rgba(0,0,0,0.6)] border-l-4 border-l-tertiary">
         {/* Left Side: Status Indicators */}
@@ -52,21 +26,21 @@ const Navbar = () => {
         {/* Right Side: Navigation & Actions */}
         <div className="flex items-center gap-2">
           <div className="flex items-center gap-1.5 mr-6 border-r border-white/10 pr-6">
-            <a href="#intel" className="nav-item flex items-center gap-2 px-3 py-1.5 rounded-lg hover:bg-white/5 transition-all group">
-                <span className="material-symbols-outlined text-[18px] text-blue-400 group-hover:scale-110 transition-transform">public</span> 
-                <span className="font-mono text-[10px] uppercase tracking-widest hidden sm:inline text-white/60 group-hover:text-white">PROJECTS</span>
+            <a href="#experts" className="nav-item flex items-center gap-2 px-3 py-1.5 rounded-lg hover:bg-white/5 transition-all group">
+                <span className="material-symbols-outlined text-[18px] text-blue-400 group-hover:scale-110 transition-transform">group</span> 
+                <span className="font-mono text-[10px] uppercase tracking-widest hidden sm:inline text-white/60 group-hover:text-white">EXPERTS</span>
             </a>
-            <a href="#ops" className="nav-item flex items-center gap-2 px-3 py-1.5 rounded-lg hover:bg-white/5 transition-all group">
-                <span className="material-symbols-outlined text-[18px] text-primary group-hover:scale-110 transition-transform">terminal</span> 
-                <span className="font-mono text-[10px] uppercase tracking-widest hidden sm:inline text-white/60 group-hover:text-white">EVENTS</span>
+            <a href="#sprints" className="nav-item flex items-center gap-2 px-3 py-1.5 rounded-lg hover:bg-white/5 transition-all group">
+                <span className="material-symbols-outlined text-[18px] text-primary group-hover:scale-110 transition-transform">bolt</span> 
+                <span className="font-mono text-[10px] uppercase tracking-widest hidden sm:inline text-white/60 group-hover:text-white">SPRINTS</span>
             </a>
-            <a href="#nodes" className="nav-item flex items-center gap-2 px-3 py-1.5 rounded-lg hover:bg-white/5 transition-all group">
-                <span className="material-symbols-outlined text-[18px] text-tertiary group-hover:scale-110 transition-transform">hub</span> 
-                <span className="font-mono text-[10px] uppercase tracking-widest hidden sm:inline text-white/60 group-hover:text-white">SCHEDULE</span>
+            <a href="#legal" className="nav-item flex items-center gap-2 px-3 py-1.5 rounded-lg hover:bg-white/5 transition-all group">
+                <span className="material-symbols-outlined text-[18px] text-tertiary group-hover:scale-110 transition-transform">gavel</span> 
+                <span className="font-mono text-[10px] uppercase tracking-widest hidden sm:inline text-white/60 group-hover:text-white">LEGAL</span>
             </a>
-            <a href="#vault" className="nav-item flex items-center gap-2 px-3 py-1.5 rounded-lg hover:bg-white/5 transition-all group">
-                <span className="material-symbols-outlined text-[18px] text-fuchsia-400 group-hover:scale-110 transition-transform">security</span> 
-                <span className="font-mono text-[10px] uppercase tracking-widest hidden sm:inline text-white/60 group-hover:text-white">OPERATIVES</span>
+            <a href="#dashboard" className="nav-item flex items-center gap-2 px-3 py-1.5 rounded-lg hover:bg-white/5 transition-all group">
+                <span className="material-symbols-outlined text-[18px] text-fuchsia-400 group-hover:scale-110 transition-transform">dashboard</span> 
+                <span className="font-mono text-[10px] uppercase tracking-widest hidden sm:inline text-white/60 group-hover:text-white">DASHBOARD</span>
             </a>
           </div>
           

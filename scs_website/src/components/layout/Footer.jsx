@@ -2,44 +2,61 @@ import React from 'react';
 
 const Footer = () => {
     return (
-      <footer className="footer bg-bg-base border-t border-white/5 py-24 px-[10%]">
-        <div className="flex flex-col md:flex-row justify-between items-start gap-12">
-            <div className="max-w-xs">
-                <div className="logo text-white font-black text-3xl tracking-tighter cursor-pointer mb-6 font-space">
-                    SCS<span className="text-primary font-mono text-sm tracking-widest ml-1">_DB</span>
+      <footer className="footer bg-bg-base border-t border-white/5 py-24 px-[10%] relative overflow-hidden">
+        
+        {/* Main Grid Layout */}
+        <div className="flex flex-col lg:flex-row justify-between items-start gap-12 relative z-10">
+            {/* Branding Block */}
+            <div className="max-w-sm">
+                <div className="logo text-white font-black text-3xl tracking-tighter cursor-pointer mb-6 font-space uppercase">
+                    ONSAFE<span className="text-[#d1b3ff] font-mono text-sm tracking-widest ml-1">_CORE</span>
                 </div>
-                <p className="text-text-secondary font-inter text-xs leading-relaxed uppercase tracking-tight">
-                    The System Control Shell is a decentralized autonomous organization focused on the architectural integrity of the global digital infrastructure.
+                <p className="text-white/60 font-inter text-sm leading-relaxed tracking-tight group">
+                    A trust-centric cybersecurity collaboration platform engineered to enable early-stage ventures to effectively secure their products prior to market deployment.
                 </p>
             </div>
             
-            <div className="grid grid-cols-2 lg:grid-cols-3 gap-16">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-16 relative z-10">
+                {/* Link Column 1 */}
                 <div>
-                    <h5 className="text-white font-mono text-[10px] font-bold tracking-[0.3em] mb-6 uppercase opacity-50">// DIRECTORY</h5>
-                    <div className="flex flex-col gap-3 font-mono text-[11px] font-bold text-text-secondary uppercase">
-                        <a href="#" className="hover:text-primary transition-colors tracking-widest">Protocols</a>
-                        <a href="#" className="hover:text-primary transition-colors tracking-widest">Vault</a>
-                        <a href="#" className="hover:text-primary transition-colors tracking-widest">Network</a>
+                    <h5 className="text-white font-mono text-[10px] font-bold tracking-[0.3em] mb-6 uppercase opacity-50">// SOLUTIONS</h5>
+                    <div className="flex flex-col gap-4 font-mono text-[11px] font-bold text-white/50 uppercase">
+                        <a href="#expert-directory" className="hover:text-primary transition-all duration-300 tracking-widest">Expert_Directory</a>
+                        <a href="#security-sprints" className="hover:text-primary transition-all duration-300 tracking-widest">Security_Sprints</a>
+                        <a href="#nda-framework" className="hover:text-primary transition-all duration-300 tracking-widest">NDA_Framework</a>
+                        <a href="#pricing-tiers" className="hover:text-primary transition-all duration-300 tracking-widest">Pricing_Tiers</a>
                     </div>
                 </div>
+                
+                {/* Link Column 2 */}
                 <div>
-                    <h5 className="text-white font-mono text-[10px] font-bold tracking-[0.3em] mb-6 uppercase opacity-50">// SOCIALS</h5>
-                    <div className="flex flex-col gap-3 font-mono text-[11px] font-bold text-text-secondary uppercase">
-                        <a href="#" className="hover:text-secondary transition-colors tracking-widest">Terminal</a>
-                        <a href="#" className="hover:text-secondary transition-colors tracking-widest">Hub</a>
-                        <a href="#" className="hover:text-secondary transition-colors tracking-widest">RSS_Feed</a>
+                    <h5 className="text-white font-mono text-[10px] font-bold tracking-[0.3em] mb-6 uppercase opacity-50">// TERMINAL</h5>
+                    <div className="flex flex-col gap-4 font-mono text-[11px] font-bold text-white/50 uppercase">
+                        <a href="#access-node" className="hover:text-primary transition-all duration-300 tracking-widest">Access_Node</a>
+                        <a href="#vulnerability-dashboard" className="hover:text-primary transition-all duration-300 tracking-widest">Vulnerability_Dashboard</a>
+                        <a href="#research-annex" className="hover:text-primary transition-all duration-300 tracking-widest">Research_Annex</a>
+                        <a href="#community-uplink" className="hover:text-primary transition-all duration-300 tracking-widest">Community_Uplink</a>
                     </div>
                 </div>
             </div>
         </div>
         
-        <div className="mt-24 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
-            <div className="text-text-secondary font-mono text-[9px] uppercase font-bold tracking-[0.4em]">
-              &copy; 2024 SCS_DB // ALL_RIGHTS_RESERVED
+        {/* Bottom Status Bar */}
+        <div className="mt-24 pt-8 border-t border-white/5 flex flex-col xl:flex-row justify-between items-start xl:items-center gap-6 relative z-10">
+            {/* Copyright */}
+            <div className="text-white/40 font-mono text-[9px] uppercase font-bold tracking-[0.4em]">
+              &copy; 2026 ONSAFE_PLATFORM // ALL_RIGHTS_RESERVED.
             </div>
-            <div className="text-tertiary font-mono text-[9px] uppercase font-bold tracking-[0.4em] flex items-center gap-2">
-                <span className="w-2 h-2 bg-tertiary rounded-full animate-pulse"></span>
-                AUTHORIZED_ACCESS_ONLY
+            
+            {/* Live Status Indicator */}
+            <div className="text-[#39ff14] font-mono text-[9px] uppercase font-bold tracking-[0.4em] flex items-center gap-3">
+                <span className="w-2.5 h-2.5 bg-[#39ff14] rounded-full animate-pulse shadow-[0_0_10px_rgba(57,255,20,0.8)]"></span>
+                TRUST_DRIVEN_COLLABORATION_PROTOCOL_ACTIVE
+            </div>
+            
+            {/* Access Warning */}
+            <div className="text-[#00f5ff] font-mono text-[9px] uppercase font-bold tracking-[0.4em]">
+                AUTHORIZED_ACCESS_ONLY // ENCRYPTED_CONNECTION_SECURED
             </div>
         </div>
       </footer>

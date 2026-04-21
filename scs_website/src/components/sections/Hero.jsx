@@ -12,25 +12,40 @@ const Hero = () => {
           <div className="inline-block px-3 py-1 bg-tertiary/10 border border-tertiary/30">
             <span className="font-mono text-[10px] text-tertiary uppercase tracking-[0.3em]">System Status: Operational</span>
           </div>
-          
           <h1 className="flex flex-col font-black font-space uppercase">
-            <span className="text-white text-6xl md:text-8xl tracking-tight leading-[0.85]">DEFENDING</span>
-            <span className="text-white text-6xl md:text-8xl tracking-tight leading-[0.85]">THE</span>
-            <span className="text-7xl md:text-[8rem] xl:text-[10rem] tracking-tighter leading-[0.8] bg-gradient-to-r from-[#d1b3ff] to-[#00f5ff] text-transparent bg-clip-text drop-shadow-[0_0_20px_rgba(209,179,255,0.3)]">DIGITAL</span>
-            <span className="text-7xl md:text-[8rem] xl:text-[10rem] tracking-tighter leading-[0.8] mb-8 bg-gradient-to-r from-[#00f5ff] to-[#39ff14] text-transparent bg-clip-text drop-shadow-[0_0_20px_rgba(0,245,255,0.2)]">FRONTIER</span>
+            <span className="text-white text-7xl tracking-tight leading-[1]">SECURING</span>
+            <span className="text-white text-7xl tracking-tight leading-[1]">YOUR STARTUP</span>
+            <span className="text-white text-7xl tracking-tight leading-[1]">BEFORE</span>
+            <span className="text-white text-7xl tracking-tight leading-[1]">LAUNCH</span>
           </h1>
 
           <p className="text-white/60 text-lg md:text-xl max-w-xl font-inter leading-relaxed font-medium">
-            <span className="text-white">SCS_CORE</span> is an elite architectural node for securing decentralized protocols and high-value data arrays across the multi-chain ecosystem.
+            <span className="text-white">OnSafe</span> is a trust-driven collaboration platform designed to help early-stage ventures secure their MVPs through verified expert partnerships and affordable sprint packages.
           </p>
 
           <div className="flex flex-wrap gap-6 pt-4">
             <button className="bg-[#d1b3ff] text-black font-mono font-black px-10 py-4 rounded-xl tracking-widest text-xs hover:bg-[#e1ccff] transition-all active:scale-95 shadow-[0_0_30px_rgba(209,179,255,0.4)] uppercase">
-              INITIATE_PROTOCOL
+              FIND_AN_EXPERT
             </button>
             <button className="bg-transparent border border-[#00f5ff]/40 text-[#00f5ff] font-mono font-bold px-10 py-4 rounded-xl tracking-widest text-xs hover:bg-[#00f5ff]/10 hover:border-[#00f5ff] transition-all active:scale-95 uppercase">
-              VIEW_NODES
+              BROWSE_SPRINTS
             </button>
+          </div>
+
+          {/* Core Pillars */}
+          <div className="pt-8 grid grid-cols-1 sm:grid-cols-3 gap-6 text-left border-t border-white/5 mt-8">
+             <div className="space-y-2 border-l-2 border-[#00f5ff] pl-4">
+                 <h2 className="text-[#00f5ff] font-mono text-xs tracking-widest uppercase font-bold">Affordable</h2>
+                 <p className="text-white/60 text-xs font-sans leading-relaxed">Structured testing packages that work within startup budgets.</p>
+             </div>
+             <div className="space-y-2 border-l-2 border-[#d1b3ff] pl-4">
+                 <h2 className="text-[#d1b3ff] font-mono text-xs tracking-widest uppercase font-bold">Trusted</h2>
+                 <p className="text-white/60 text-xs font-sans leading-relaxed">Verified expert onboarding and built-in legal frameworks like NDAs.</p>
+             </div>
+             <div className="space-y-2 border-l-2 border-[#39ff14] pl-4">
+                 <h2 className="text-[#39ff14] font-mono text-xs tracking-widest uppercase font-bold">Structured</h2>
+                 <p className="text-white/60 text-xs font-sans leading-relaxed">Guided remediation workflows rather than just automated scan results.</p>
+             </div>
           </div>
         </div>
 

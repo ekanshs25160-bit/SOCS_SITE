@@ -3,6 +3,9 @@ import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
 import Hero from "../components/sections/Hero";
 import StatsSection from "../components/sections/Stats";
+import Sprints from "../components/sections/Sprints";
+import TrustArchitecture from "../components/sections/TrustArchitecture";
+import DashboardPreview from "../components/sections/DashboardPreview";
 import ProjectsSection from "../components/sections/Projects";
 import TeamSection from "../components/sections/Team";
 
@@ -14,6 +17,9 @@ const Home = () => {
       <main>
         <Hero />
         <StatsSection />
+        <Sprints />
+        <TrustArchitecture />
+        <DashboardPreview />
         <ProjectsSection />
         <TeamSection />
       </main>

@@ -4,26 +4,26 @@ import Card from "../ui/Card";
 const ProjectsSection = () => {
   const projects = [
     {
-      id: "PRJ_844",
-      title: "STARK_SHIELD",
-      description: "L2 privacy-preserving protocol for institutional asset transfers with zero-knowledge proof verification.",
-      icon: "shield_lock",
-      color: "text-[#d1b3ff]",
-      borderColor: "border-[#d1b3ff]/10"
-    },
-    {
-      id: "PRJ_109",
-      title: "NEXUS_NODE",
-      description: "Distributed edge computing mesh designed for low-latency decentralized application hosting.",
-      icon: "hub",
+      id: "SPRINT_01",
+      title: "EXPERT_DIRECTORY",
+      description: "A rigorous, verified onboarding protocol connecting startups with a directory of trusted cybersecurity practitioners.",
+      icon: "verified_user",
       color: "text-[#00f5ff]",
       borderColor: "border-[#00f5ff]/10"
     },
     {
-      id: "PRJ_021",
-      title: "CORE_SHELL",
-      description: "Hardware-level security interface for cold-storage management and multi-sig authorization flows.",
-      icon: "terminal",
+      id: "SPRINT_02",
+      title: "SECURITY_SPRINTS",
+      description: "Pre-defined, affordable testing packages—such as API audits and auth checks—tailored for MVP launch constraints.",
+      icon: "speed", 
+      color: "text-[#d1b3ff]",
+      borderColor: "border-[#d1b3ff]/10"
+    },
+    {
+      id: "SPRINT_03",
+      title: "TRUST_FRAMEWORK",
+      description: "Built-in legal safeguards including integrated NDA templates and standardized vulnerability reporting dashboards.",
+      icon: "gavel",
       color: "text-[#39ff14]",
       borderColor: "border-[#39ff14]/10"
     }
@@ -35,17 +35,17 @@ const ProjectsSection = () => {
       <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end mb-20 gap-8">
         <div className="space-y-4 font-fade-in">
           <span className="font-mono text-[#00f5ff] text-xs font-bold tracking-[0.4em] uppercase opacity-70">
-            PORTFOLIO_EXHIBITS
+            CORE_OFFERINGS
           </span>
           <h2 className="text-white text-5xl md:text-7xl font-black font-space tracking-tight uppercase">
-            FEATURED PROJECTS
+            CORE SERVICES
           </h2>
         </div>
         
         <div className="hidden lg:flex flex-col items-end font-mono text-[10px] text-white/30 space-y-1 tracking-widest uppercase">
-          <span>001_ENCRYPT</span>
-          <span>002_VALIDATE</span>
-          <span>003_SECURE</span>
+          <span>001_STRUCTURED</span>
+          <span>002_AFFORDABLE</span>
+          <span>003_TRUSTED</span>
         </div>
       </div>
 
