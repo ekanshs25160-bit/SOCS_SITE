@@ -1,21 +1,23 @@
 import React from 'react';
 
 const Button = ({ children, variant = "primary", className = "", ...props }) => {
-  const baseStyle = "px-6 py-3 rounded-lg font-bold transition-all transition-duration-300";
+  const baseStyle = "px-8 py-3 font-bold transition-all duration-300 uppercase tracking-wider font-space";
   const variants = {
-    primary: "bg-gradient-to-r from-[#00ff9c] to-[#00d4ff] text-[#0b111a] hover:scale-105 hover:shadow-[0_0_20px_rgba(0,255,156,0.3)]",
-    outline: "border border-[rgba(255,255,255,0.1)] text-[#e6edf3] hover:bg-white hover:text-black",
-    ghost: "text-[#8b949e] hover:text-[#00ff9c]"
+    primary: "bg-primary text-[#0e0e0e] hover:shadow-[0_0_20px_rgba(191,0,255,0.4)] active:scale-95",
+    outline: "border border-secondary/30 text-secondary hover:border-secondary hover:shadow-[0_0_15px_rgba(0,245,255,0.25)] active:scale-95",
+    ghost: "text-tertiary hover:opacity-80 flex items-center gap-2"
   };
 
   return (
     <button 
-      className={`${baseStyle} ${variants[variant]} ${className}`} 
+      className={`${baseStyle} ${variants[variant]} ${className} outline-none cursor-pointer`} 
       {...props}
     >
       {children}
+      {variant === 'ghost' && <span className="animate-pulse">_</span>}
     </button>
   );
 };
 
 export default Button;
+

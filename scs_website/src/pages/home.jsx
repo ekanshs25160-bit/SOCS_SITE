@@ -4,18 +4,23 @@ import Footer from "../components/layout/Footer";
 import Hero from "../components/sections/Hero";
 import StatsSection from "../components/sections/Stats";
 import ProjectsSection from "../components/sections/Projects";
-import { Projects, Stats } from "../data/projects";
+import TeamSection from "../components/sections/Team";
+
 
 const Home = () => {
   return (
-    <div className="home-container fade-in-up bg-[#0b111a] min-h-screen text-[#e6edf3]">
+    <div className="home-container bg-bg-base min-h-screen text-text-primary selection:bg-primary selection:text-white">
       <Navbar />
-      <Hero />
-      <StatsSection stats={Stats} />
-      <ProjectsSection projects={Projects} />
+      <main>
+        <Hero />
+        <StatsSection />
+        <ProjectsSection />
+        <TeamSection />
+      </main>
       <Footer />
     </div>
   );
 };
 
 export default Home;
+

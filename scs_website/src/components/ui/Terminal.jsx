@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 const lines = [
 
-  { text: "> initializing SOCS system...", speed: 30, delay: 300 },
+  { text: "> initializing OnSafe system...", speed: 30, delay: 300 },
   { text: "> loading modules...", speed: 40, delay: 300 },
   { text: "> verifying identity...", speed: 80, delay: 800 },
   { text: "> identity: unknown", speed: 80, delay: 800 },

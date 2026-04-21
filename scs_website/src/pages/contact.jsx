@@ -17,7 +17,7 @@ const ContactPage = () => {
                           <div className="w-16 h-16 bg-[#00ff9c1a] rounded-full flex items-center justify-center text-cyber text-2xl font-bold">@</div>
                           <div>
                               <div className="text-[#8b949e] text-xs font-bold uppercase tracking-widest mb-1">Email</div>
-                              <div className="text-xl font-bold">contact@socs.edu</div>
+                              <div className="text-xl font-bold">contact@onsafe.edu</div>
                           </div>
                       </div>
                       <div className="flex items-center gap-6">

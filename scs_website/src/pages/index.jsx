@@ -1,17 +1,24 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Terminal from "../components/ui/Terminal";
 
 export default function Entry({ onComplete }) {
   const [entered, setEntered] = useState(false);
   const [glitch, setGlitch] = useState(false);
 
+  useEffect(() => {
+    const hasVisited = localStorage.getItem("onsafe_Visited");
+    if (hasVisited) {
+      onComplete();
+    }
+  }, [onComplete]);
+
   const handleTerminalComplete = () => {
+    localStorage.setItem("onsafe_Visited", "true");
     setEntered(true);
     setGlitch(true);
     setTimeout(() => {
       setGlitch(false);
-      // Optional: Call onComplete prop from App.jsx if you want to transition to homepage automatically
-      // onComplete(); 
+      onComplete();
     }, 1000);
   };
 
@@ -20,13 +27,18 @@ export default function Entry({ onComplete }) {
       {!entered ? (
         <Terminal onComplete={handleTerminalComplete} />
       ) : (
-        <div
-          className={`bg-black text-green-400 font-mono h-screen flex items-center justify-center ${
-            glitch ? "animate-glitch" : ""
-          }`}>
-          <h1 className="text-4xl">Welcome to SOCS 🚀</h1>
-        </div>
+      <div
+        className={`bg-black text-green-400 font-mono h-screen flex items-center justify-center ${
+          glitch ? "animate-glitch" : ""
+        }`}
+      >
+        {/* <h1 className="text-6xl text-white font-space uppercase drop-shadow-[0_0_15px_rgba(191,0,255,0.3)]">
+          Welcome to OnSafe 🚀
+        </h1> */}
+      </div>
+
       )}
+
       <style>{`
         @keyframes glitch {
           0% { transform: translate(0); }

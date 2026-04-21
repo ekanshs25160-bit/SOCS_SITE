@@ -1,30 +1,51 @@
-import React from 'react';
+import React from "react";
 
-const Card = ({ children, title, description, image, tech = [], className = "" }) => {
+const Card = ({
+  id,
+  title,
+  description,
+  icon,
+  color = "text-primary",
+  borderColor = "border-primary/10",
+  className = "",
+  children
+}) => {
   return (
-    <div className={`project-card glass p-8 rounded-2xl hover:border-[#00ff9c] transition-all duration-300 transform hover:-translate-y-2 cursor-pointer group flex flex-col justify-end h-[450px] relative overflow-hidden ${className}`}>
-        {image && (
-            <div className="absolute top-0 left-0 w-full h-full opacity-20 pointer-events-none transition-transform duration-500 group-hover:scale-110">
-                <img src={image} alt={title || "card image"} className="w-full h-full object-cover" />
-            </div>
+    <div 
+      className={`group bg-[#13171f] border ${borderColor} p-10 rounded-[2.5rem] h-full flex flex-col justify-between hover:bg-[#1a1f29] transition-all duration-500 cursor-pointer relative overflow-hidden shadow-2xl ${className}`}
+    >
+      {/* Project ID (Top Right) */}
+      {id && (
+        <span className="absolute top-10 right-10 font-mono text-[10px] text-white/20 tracking-widest font-bold">
+          {id}
+        </span>
+      )}
+
+      {/* Icon and Title Container */}
+      <div className="space-y-12">
+        {icon && (
+          <span className={`material-symbols-outlined text-4xl ${color} filter drop-shadow-md`}>
+            {icon}
+          </span>
         )}
         
-        <div className="relative z-10 flex flex-col h-full justify-between">
-            <div className="flex flex-wrap gap-2">
-                {tech.map((t, idx) => (
-                    <span key={idx} className="bg-[rgba(0,255,156,0.1)] text-[#00ff9c] px-3 py-1 rounded-full text-[10px] uppercase font-bold tracking-widest">{t}</span>
-                ))}
-            </div>
-            
-            <div>
-                <h3 className="text-3xl font-black mb-2 group-hover:text-[#00ff9c] transition-colors">{title}</h3>
-                <p className="text-[#8b949e] font-medium leading-relaxed">{description}</p>
-            </div>
+        <div className="space-y-4">
+          <h3 className="text-white text-3xl font-black font-space tracking-tight group-hover:text-secondary transition-colors uppercase">
+            {title}
+          </h3>
+          <p className="text-white/40 font-inter text-sm leading-relaxed max-w-xs group-hover:text-white/60 transition-colors">
+            {description}
+          </p>
         </div>
+      </div>
 
-        {children}
+      {/* Decorative Corner Bracket */}
+      <div className={`absolute -bottom-1 -right-1 w-12 h-12 border-b-2 border-r-2 ${borderColor} rounded-br-[2.5rem] opacity-0 group-hover:opacity-100 transition-opacity`}></div>
+      
+      {children}
     </div>
   );
 };
 
 export default Card;
+
